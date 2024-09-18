@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'flutter_cnotify_sdk_platform_interface.dart';
+import 'cnotify_sdk_platform_interface.dart';
 
-/// An implementation of [FlutterCNotifySdkPlatform] that uses method channels.
-class MethodChannelFlutterCnotifySdk extends FlutterCNotifySdkPlatform {
+/// An implementation of [CNotifySdkPlatform] that uses method channels.
+class MethodChannelCNotifySdk extends CNotifySdkPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('flutter_cnotify_sdk');

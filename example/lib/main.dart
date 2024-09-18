@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
-import 'package:flutter_cnotify_sdk/flutter_cnotify_sdk.dart';
+import 'package:flutter_cnotify_sdk/cnotify_sdk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _flutterCnotifySdkPlugin = FlutterCNotifySdk();
+  final _flutterCnotifySdkPlugin = CNotifySdk();
 
   @override
   void initState() {

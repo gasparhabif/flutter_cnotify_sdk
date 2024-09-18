@@ -36,7 +36,7 @@ public class FlutterCnotifySdkPlugin: NSObject, FlutterPlugin, UIApplicationDele
       cNotifySDK = CNotifySDK(contentsOfFile: file, testing: testingMode)
       UNUserNotificationCenter.current().delegate = cNotifySDK
       result("CNotifySDK initialized")
-      print("CNotifySDK initialized (testing mode: \(testingMode))")
+      print("[CNotifySDK - Flutter] Initialized (testing mode: \(testingMode))")
     } else {
       result(FlutterError(code: "FILE_NOT_FOUND", message: "Plist file not found", details: nil))
     }

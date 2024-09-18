@@ -1,11 +1,11 @@
-import 'flutter_cnotify_sdk_platform_interface.dart';
+import 'cnotify_sdk_platform_interface.dart';
 
-class FlutterCNotifySdk {
+class CNotifySdk {
   Future<void> init({
     String? googleServiceInfoPlistPathOverride,
     bool testing = false,
   }) {
-    return FlutterCNotifySdkPlatform.instance.init(
+    return CNotifySdkPlatform.instance.init(
       googleServiceInfoPlistPathOverride: googleServiceInfoPlistPathOverride,
       testing: testing,
     );

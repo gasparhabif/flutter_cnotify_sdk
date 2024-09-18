@@ -6,15 +6,15 @@
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:web/web.dart' as web;
 
-import 'flutter_cnotify_sdk_platform_interface.dart';
+import 'cnotify_sdk_platform_interface.dart';
 
 /// A web implementation of the FlutterCnotifySdkPlatform of the FlutterCnotifySdk plugin.
-class FlutterCnotifySdkWeb extends FlutterCNotifySdkPlatform {
+class FlutterCnotifySdkWeb extends CNotifySdkPlatform {
   /// Constructs a FlutterCnotifySdkWeb
   FlutterCnotifySdkWeb();
 
   static void registerWith(Registrar registrar) {
-    FlutterCNotifySdkPlatform.instance = FlutterCnotifySdkWeb();
+    CNotifySdkPlatform.instance = FlutterCnotifySdkWeb();
   }
 
   @override

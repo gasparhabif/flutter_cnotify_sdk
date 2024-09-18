@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_cnotify_sdk'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'This SDK is used to connect the integration with cnotify.me. platform that allows to send push notifications to your users.'
   s.description      = <<-DESC
     This SDK is used to connect the integration with cnotify.me. It provides functionality for handling push notifications and integrating with the cnotify.me service.
