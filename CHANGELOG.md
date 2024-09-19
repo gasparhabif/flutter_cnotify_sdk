@@ -1,3 +1,6 @@
+## 0.1.2
+* Updated native Android SDK Version
+
 ## 0.1.1
 * Minor fixes to Android plugin
 * Modifications over example

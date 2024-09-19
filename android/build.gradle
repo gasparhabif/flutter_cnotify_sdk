@@ -27,11 +27,22 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
+    // Add this line at the beginning of the android block
+    buildFeatures {
+        buildConfig true
+    }
+
     if (project.android.hasProperty("namespace")) {
         namespace = "com.example.flutter_cnotify_sdk"
     }
 
     compileSdk = 34
+
+    // Add these lines
+    defaultConfig {
+        minSdk = 21
+        targetSdk = 34
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -47,12 +58,8 @@ android {
         test.java.srcDirs += "src/test/kotlin"
     }
 
-    defaultConfig {
-        minSdk = 21
-    }
-
     dependencies {
-        implementation("com.github.gasparhabif:android-cnotifysdk:0.0.5")
+        implementation("com.github.gasparhabif:android-cnotifysdk:0.1.1")
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.4.0")
     }
@@ -67,5 +74,12 @@ android {
                showStandardStreams = true
             }
         }
+    }
+}
+
+// Add this at the end of the file
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
     }
 }
