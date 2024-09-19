@@ -1,3 +1,6 @@
+## 0.1.0
+* Added support for Android
+
 ## 0.0.3
 * Renamed classes to improve clearness
 * Updated logs to be more consistent 

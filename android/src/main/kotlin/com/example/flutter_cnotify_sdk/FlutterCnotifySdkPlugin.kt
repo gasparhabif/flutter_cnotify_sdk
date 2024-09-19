@@ -22,8 +22,14 @@ class FlutterCnotifySdkPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    if (call.method == "initSDK") {
+      // Initialize CNotifySDK
+      fun getApplicationContext(): Context {
+          return applicationContext
+      }
+      CNotifySDK.getInstance(getApplicationContext(), call.argument("testing") as Boolean)
+
+      result.success("CNotifySDK initialized")
     } else {
       result.notImplemented()
     }
