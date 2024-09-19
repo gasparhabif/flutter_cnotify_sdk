@@ -1,5 +1,7 @@
 package com.example.flutter_cnotify_sdk
 
+import android.content.Context
+import me.cnotify.cnotify_android_sdk.CNotifySDK
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -15,19 +17,20 @@ class FlutterCnotifySdkPlugin: FlutterPlugin, MethodCallHandler {
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
   /// when the Flutter Engine is detached from the Activity
   private lateinit var channel : MethodChannel
+  private lateinit var context: Context  // Store the context
+
 
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_cnotify_sdk")
     channel.setMethodCallHandler(this)
+    context = flutterPluginBinding.applicationContext
+
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "initSDK") {
-      // Initialize CNotifySDK
-      fun getApplicationContext(): Context {
-          return applicationContext
-      }
-      CNotifySDK.getInstance(getApplicationContext(), call.argument("testing") as Boolean)
+      val testing = call.argument<Boolean>("testing") ?: false  // Use false if null
+      CNotifySDK.getInstance(context, testing)
 
       result.success("CNotifySDK initialized")
     } else {

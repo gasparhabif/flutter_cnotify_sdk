@@ -1,3 +1,7 @@
+## 0.1.1
+* Minor fixes to Android plugin
+* Modifications over example
+
 ## 0.1.0
 * Added support for Android
 
