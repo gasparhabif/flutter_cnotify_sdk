@@ -1,3 +1,6 @@
+## 0.2.0
+* Updated native iOS SDK Version
+
 ## 0.1.2
 * Updated native Android SDK Version
 

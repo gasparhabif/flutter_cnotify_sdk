@@ -1,5 +1,5 @@
 PODS:
-  - CNotifySDK (0.2.11):
+  - CNotifySDK (0.2.18):
     - Firebase/Core
     - Firebase/Messaging
   - Firebase/Core (11.2.0):
@@ -49,8 +49,8 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 8.0)
     - nanopb (~> 3.30910.0)
   - Flutter (1.0.0)
-  - flutter_cnotify_sdk (0.0.3):
-    - CNotifySDK (~> 0.2.11)
+  - flutter_cnotify_sdk (0.1.2):
+    - CNotifySDK
     - Flutter
   - GoogleAppMeasurement (11.2.0):
     - GoogleAppMeasurement/AdIdSupport (= 11.2.0)
@@ -102,8 +102,6 @@ PODS:
   - GoogleUtilities/UserDefaults (8.0.2):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - integration_test (0.0.1):
-    - Flutter
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
     - nanopb/encode (= 3.30910.0)
@@ -114,7 +112,6 @@ PODS:
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_cnotify_sdk (from `.symlinks/plugins/flutter_cnotify_sdk/ios`)
-  - integration_test (from `.symlinks/plugins/integration_test/ios`)
 
 SPEC REPOS:
   trunk:
@@ -136,11 +133,9 @@ EXTERNAL SOURCES:
     :path: Flutter
   flutter_cnotify_sdk:
     :path: ".symlinks/plugins/flutter_cnotify_sdk/ios"
-  integration_test:
-    :path: ".symlinks/plugins/integration_test/ios"
 
 SPEC CHECKSUMS:
-  CNotifySDK: c7acc06c1366495aa3bc2d42131ec2bc2af1a46e
+  CNotifySDK: 1819ec12878be8adea1e925e151f6abf2bd51a16
   Firebase: 98e6bf5278170668a7983e12971a66b2cd57fc8c
   FirebaseAnalytics: c36efd5710c60c17558650fa58c2066eca7e9265
   FirebaseCore: a282032ae9295c795714ded2ec9c522fc237f8da
@@ -148,11 +143,10 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 771177d89d6c451dc6e50085ec82e2fc77ed0a4a
   FirebaseMessaging: c9ec7b90c399c7a6100297e9d16f8a27fc7f7152
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_cnotify_sdk: a6ca4fa3bd87ffa9dc47b0f3f54939c794ca69c7
+  flutter_cnotify_sdk: 09f78369c60c4f8a5ef6314f2043768941ef8452
   GoogleAppMeasurement: 76d4f8b36b03bd8381fa9a7fe2cc7f99c0a2e93a
   GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
-  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
