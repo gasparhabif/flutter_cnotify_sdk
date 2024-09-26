@@ -1,6 +1,7 @@
 package com.example.flutter_cnotify_sdk
 
 import android.content.Context
+import android.util.Log
 import me.cnotify.cnotify_android_sdk.CNotifySDK
 import androidx.annotation.NonNull
 

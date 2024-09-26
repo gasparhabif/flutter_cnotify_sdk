@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.4
+* Updated both native SDKs to the latest versions
+
 ## 0.2.3
 * Added logs to the initialization process
 
