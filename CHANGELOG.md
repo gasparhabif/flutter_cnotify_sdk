@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.5
+* Added support for older Dart SDK versions
+
 ## 0.2.4
 * Updated both native SDKs to the latest versions
 
