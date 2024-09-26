@@ -28,7 +28,7 @@ class FlutterCnotifySdkPlugin: FlutterPlugin, MethodCallHandler {
 
   }
 
-  override fun onMethodCall(call: MethodCall, result: Result) {
+  override fun onMethodCall(call: MethodCall, result: Result) {  
     if (call.method == "initSDK") {
       val testing = call.argument<Boolean>("testing") ?: false  // Use false if null
       Log.d("CNotifySDK", "Initializing CNotifySDK with testing mode: $testing")

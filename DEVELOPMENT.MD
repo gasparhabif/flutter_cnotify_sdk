@@ -15,8 +15,13 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## Publishing a new version
-1. Update the version in `pubspec.yaml` file
+1. Update the version in `pubspec.yaml` and `ios/flutter_cnotify_sdk.podspec` files
 2. Update the `CHANGELOG.md` file with the new version and changes
 3. Run `dart pub publish --dry-run` to check if everything is ok
 4. Push code changes to the repository
 5. Run `dart pub publish` to publish the new version
+
+
+## Updating the native SDKs
+1. Update the version in `android/build.gradle` file
+2. iOS does not required updating the SDK, because it is already the latest version

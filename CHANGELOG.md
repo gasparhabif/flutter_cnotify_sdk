@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.0
+* Updated native Android SDK Version
+
 ## 0.2.5
 * Added support for older Dart SDK versions
 
