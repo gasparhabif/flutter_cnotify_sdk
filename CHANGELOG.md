@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3
+* Added logs to the initialization process
+
 ## 0.2.2
 * Updated native Android SDK Version
 
