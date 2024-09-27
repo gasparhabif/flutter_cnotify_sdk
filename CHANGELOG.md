@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.1
+* Added iOS SDK version to the podspec
+
 ## 0.4.0
 * Updated both native SDKs to the latest versions, including the new topic generation
 
