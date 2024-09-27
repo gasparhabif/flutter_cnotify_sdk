@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.2
+* Added log for firebase used project
+
 ## 0.4.1
 * Added iOS SDK version to the podspec
 

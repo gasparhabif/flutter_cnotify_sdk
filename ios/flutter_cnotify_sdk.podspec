@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_cnotify_sdk'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'This SDK is used to connect the integration with cnotify.me. platform that allows to send push notifications to your users.'
   s.description      = <<-DESC
     This SDK is used to connect the integration with cnotify.me. It provides functionality for handling push notifications and integrating with the cnotify.me service.
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'CNotifySDK', '~> 0.5.0'
+  s.dependency 'CNotifySDK', '~> 0.5.1'
   s.platform = :ios, '13.0'
 
   # Flutter.framework does not contain a i386 slice.

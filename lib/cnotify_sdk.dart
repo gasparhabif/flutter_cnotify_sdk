@@ -7,7 +7,7 @@ class CNotifySdk {
     String? googleServiceInfoPlistPathOverride,
     bool testing = false,
   }) {
-    debugPrint("Initializing CNotifySDK (v0.4.1) with testing mode: $testing");
+    debugPrint("Initializing CNotifySDK (v0.4.2) with testing mode: $testing");
     return CNotifySdkPlatform.instance.init(
       googleServiceInfoPlistPathOverride: googleServiceInfoPlistPathOverride,
       testing: testing,
