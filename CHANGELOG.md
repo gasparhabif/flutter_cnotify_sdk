@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0
+* Updated both native SDKs to the latest versions, including the new topic generation
+
 ## 0.3.0
 * Updated native Android SDK Version
 
