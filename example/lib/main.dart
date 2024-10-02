@@ -16,7 +16,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _flutterCnotifySdkPlugin = CNotifySdk();
 
   @override
   void initState() {
@@ -28,7 +27,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> initPlatformState() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
-    _flutterCnotifySdkPlugin.init(
+    CNotifySdk.init(
       testing: true,
     );
 

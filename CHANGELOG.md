@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3
+* Updated native iOS SDK to the latest version
+* Made init method static
+
 ## 0.4.2
 * Added log for firebase used project
 

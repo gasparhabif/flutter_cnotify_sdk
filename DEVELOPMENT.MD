@@ -24,4 +24,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Updating the native SDKs
 1. Update the version in `android/build.gradle` file
-2. iOS does not required updating the SDK, because it is already the latest version
+2. Update the version in `ios/flutter_cnotify_sdk.podspec` file
