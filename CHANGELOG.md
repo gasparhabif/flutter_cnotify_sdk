@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.4
+* Update CNotify SDK for Android
+
 ## 0.4.3
 * Updated native iOS SDK to the latest version
 * Made init method static
