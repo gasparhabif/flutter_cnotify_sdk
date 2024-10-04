@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.4.4
-* Take credentials from the default location
+* Update CNotify SDK for Android
 
 ## 0.4.3
 * Updated native iOS SDK to the latest version
