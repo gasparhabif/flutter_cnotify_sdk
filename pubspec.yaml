@@ -1,6 +1,6 @@
 name: flutter_cnotify_sdk
 description: "This SDK is used to connect the integration with cnotify.me. platform that allows to send push notifications to your users."
-version: 0.4.4
+version: 0.4.5
 homepage: https://cnotify.me
 
 environment:
@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  web: ^0.5.1
+  web: ^1.1.0
   plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
