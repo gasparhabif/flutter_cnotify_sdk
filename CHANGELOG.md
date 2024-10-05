@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.5
+* Improved CNotifySDK version compatibility
+
 ## 0.4.4
 * Update CNotify SDK for Android
 
